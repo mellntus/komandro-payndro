@@ -1,0 +1,181 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+.navbar{
+    color: #f37da3;
+    box-shadow: 2px 2px 2px 2px grey;
+    background-color: #efefef;
+    font-weight: bold;
+}
+
+.navbar h5{
+    padding-top: 10px;
+    padding-left: 30px;
+}
+
+.menu-bar{
+    margin-right: 50px;
+}
+
+.menu-bar .active{
+    color: #f37da3;
+    text-decoration: underline;
+}
+
+.menu-bar a{
+    color: #333;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-decoration: none;
+}
+
+.menu-bar a:hover{
+    color: blue;
+}
+
+.content{
+    display: flex;
+    background-color: #f3f3f3;
+}
+
+.s1{
+    width: 40%;
+    height: 100%;
+    text-align: left;
+    color: black;
+    
+}
+
+.left-small-content{
+    border-radius: 20px;
+    margin: 30px;
+    padding: 30px;
+    background-color: white;
+}
+
+.left-small-content h1{
+    
+    font-size: small;
+}
+
+.left-small-content .money-balance{
+    border: none;
+    padding-left: 10px;
+    font-size: xx-large;
+    font-weight: bolder;
+    color: #f37da3;
+}
+
+.left-small-content button{
+    font-size: small;
+}
+
+.left-small-content button:hover,.mid-small-content button:hover{
+    color: #f37da3;
+}
+
+#top-up input{
+    border: none;
+}
+
+.table-form tr{
+    font-size: small;
+}
+
+.table-form input{
+    padding-left: 10px;
+    border: none;
+    font-weight: bold;
+}
+
+
+
+.mid-content p{
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: large;    
+}
+
+.mid-content h1, h2{
+    font-size: medium;
+    padding-top: 20px;
+    font-weight: normal;
+}
+
+.mid-content {
+    width: 40%;
+    height: 100%;
+    
+    
+    font-weight: bold;   
+}
+
+.mid-small-content{
+    border-radius: 20px;
+    margin: 30px;
+    padding: 30px;
+}
+
+.mid-small-content h1{
+    margin: 20px;
+    font-size: small;
+}
+
+.m1{
+    height: 51vh;
+}
+
+.s2 {
+    
+    width: 30%;
+    height: 100%;
+    text-align: left;
+    color: black;
+    
+}
+
+.right-small-content{
+    height: 86vh;
+    border-radius: 20px;
+    margin: 30px;
+    padding: 30px;
+    
+}
+
+.right-small-content h1{
+    margin: 20px;
+    font-size: small;
+}
+
+.s1 h1,.s2 h1{
+    font-weight: lighter;
+}
+
+/* Profile */
+
+.card{
+    margin-top: 10%;
+    margin-bottom: 10%;
+    margin-left: 30%;
+    width: 40%;
+}
+
+.card-body h1{
+    font-size: medium;
+    padding-top: 10px;
+    font-weight: normal;
+}
+
+.card-body h2{
+    padding: 0;
+    font-size: small;
+}
+

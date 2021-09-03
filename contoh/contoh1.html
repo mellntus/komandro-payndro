@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <a class="navbar-brand">Brand</a>
+        <button class="navbar-toggler" data-target="#my-nav" data-toggle="collapse" aria-controls="my-nav" aria-expanded="false" aria-label="Toggle navigation">
+        Hallo   <span class="navbar-toggler-icon"></span>
+        </button>
+        <div id="my-nav" class="collapse navbar-collapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Item 1 <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Item 2</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <div class="container-fluid" style="background-color: red; width: 100%; height: 100vh;">
+        <p>Halo ini contoh header</p>
+    </div>
+    <header style="background-color: red; width: 100%;">
+        <p>
+            Halo ini adalah contoh header
+        </p>
+    </header>
+
+   
+<html>
+<head>
+    <title></title>
+</head>
+<body>
+
+
+    <textarea id="message" onclick="this.value='';">garbage in garbage out</textarea>
+
+    <br />
+
+    <input id="btnPostMessage" type="button" value="POST MESSAGE" />
+
+    <br />
+
+    <div id="comments"></div>
+
+    <script type="text/javascript">
+
+        var btn = document.getElementById('btnPostMessage');
+        btn.addEventListener('click', postmsg, false);
+
+        function postmsg() {
+            var date = new Date().toLocaleString();
+
+            var msg = document.getElementById('message').value;
+            var e = document.getElementById('comments');
+            var newPost = document.createElement('p');
+
+            newPost.innerHTML = date + ": " + msg;
+            e.insertBefore(newPost, e.firstChild);
+        }
+
+        create
+    </script>
+</body>
+</html>
+    
+</body>
+</html>

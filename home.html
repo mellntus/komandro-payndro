@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Pay-ndro Finance</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/run.js"></script>
+
+    <!-- Link Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <!-- Link FontAwesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+</head>
+<body>
+    
+    <div class="navbar"> 
+        <h5 class="s">Pay-ndro</h1>
+        <div class="menu-bar px-20 mx-20">
+            <a class="active" href="#home">Home</a>
+            <a href="profile.html">About</a>
+        </div>         
+    </div>
+    
+    <div class="content">
+        <div class="side-content s1">
+            <div class="left-small-content">
+                <p><b>Balance</b></p>
+                <div class="form-control money-balance"id="money-balance">Rp. 0</div>
+                <button type="button" id="btn-topup" class="btn-topup float-end">Top-Up</button>
+                <br>
+            </div>
+
+            <div class="left-small-content" id="form-topup" style="display: none;" >
+                <p><b>Top Up</b></p>
+                <div class="input-group input-group-sm mb-3">
+                    <span class="input-group-text" id="inputGroup-sizing-sm" style="background-color: #f9f9f9; border: none;">Rp</span>
+                    <input type="text" class="form-control" id="topup-input" style="box-shadow: none; background-color: #f9f9f9;" onfocus="this.value=''">
+                    <span class="px-lg-4"><button class='submit-amount' id="submit-amount" style="height: 30px; float: right; width: 60px;" type="button">Send</button></span>
+                  </div>
+                <br>
+             
+            </div>
+            <div class="left-small-content">
+                <p><b>Information</b></p>
+                <div class="input-group input-group-sm">
+                    <span class="input-group-text" id="inputGroup-sizing-sm" style="border: none; background-color: white;font-weight: lighter; width: 120px;">Name</span>
+                    <input type="text" class="form-control text-muted" style="border: none; background-color: white; box-shadow: none; font-weight: bold;" value="Mas Ragil" readonly>
+                </div>
+                <div class="input-group input-group-sm">
+                    <span class="input-group-text" id="inputGroup-sizing-sm" style="border: none; background-color: white;font-weight: lighter; width: 120px;">Card</span>
+                    <input type="text" class="form-control text-muted" style="border: none; background-color: white; box-shadow: none; font-weight: bold;" value="Gold" readonly>
+                </div>
+                <div class="input-group input-group-sm">
+                    <span class="input-group-text" id="inputGroup-sizing-sm" style="border: none; background-color: white;font-weight: lighter; width: 120px;">Card Number</span>
+                    <input type="text" class="form-control text-muted" id="card-number-info" style="border: none; background-color: white; box-shadow: none; font-weight: bold;" value="0123456778901" max="13" min="12" readonly>
+                  </div>
+                <br>
+            </div>
+            <div class="img-logo mx-5 px-5" >
+                <img src="img/image_1.png" id="img-logo" style="width: 40vh; height: 30vh;" alt="">
+            </div>
+                          
+        </div>
+        <div class="mid-content">
+            <div class="mid-small-content m1" style="background-color: white;">
+                <p><b>Transfer</b></p>
+                <div class="input-group input-group-sm-lg mb-3">
+                    <span class="input-group-text" id="inputGroup-sizing-sm" style="background-color: #f9f9f9; border: none;">Rp</span>
+                    <input type="text" class="form-control" id="transfer-input" onfocus="this.value=''" style="box-shadow: none; background-color: #f9f9f9; border: none;" placeholder="Amount..." required>
+                </div>
+                <div class="input-group input-group-sm-lg mb-3">
+                    <span class="input-group-text" id="inputGroup-sizing-sm" style="background-color: #f9f9f9; border: none;"><i class="far fa-credit-card"></i></span>
+                    <input type="text" class="form-control" id="card-input" onfocus="this.value=''" style="box-shadow: none; background-color: #f9f9f9; border: none;" placeholder="Insert Card Number..." required>
+                </div>
+                <div class="input-group input-group-sm-lg mb-3">
+                    <span class="input-group-text" id="inputGroup-sizing-sm" style="background-color: #f9f9f9; border: none;"><i class="far fa-clipboard"></i></span>
+                    <textarea class="form-control" style="box-shadow: none; background-color: #f9f9f9; border: none;" placeholder="Description..."></textarea>
+                </div>
+                <button type="button" class="btn-transfer float-end" id="btn-transfer">Top-Up</button>
+            </div>
+            <div class="mid-small-content m2" style="background-color: white;">
+                <p><b>Contact Us</b></p>
+                <h1>
+                    contact@payndro.com<br><br>
+                    0891376241234<br><br>
+                    Depok, Jawa Barat
+                </h1>
+
+            </div>
+            
+        </div>
+        <div class="side-content s2">
+            <div class="right-small-content" style="background-color: white; overflow-y: scroll;" id="right-small-content">
+                <p><b>Logs</b></p>
+                
+        </div>
+    </div>
+        
+    
+</body>
+</html>
