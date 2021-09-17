@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <!-- Link Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
+    <!-- Link FontAwesome -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/login.js"></script>
+
+</head>
+<body>
+    <img src="img/image_1.png" alt="" style="position: fixed;" width="100%" height="100%">
+    <div class="login-form" >
+        <div class="card card-login text-center">
+            <div class="card-login-body">
+                <img src="img/image_2.jpg" alt="" style="width: 20%; border-radius: 100%; padding-top: 20px;">
+                <h1 style="text-align: center;">Selamat Datang di Pay-ndro</h1>
+                
+                <div class="input-group input-group-sm-lg mb-3 mx-5" style="width: 85%;">
+                    <span class="input-group-text" id="inputGroup-sizing-sm" style="background-color: #f9f9f9; border: none;">Username</span>
+                    <input type="text" class="form-control" id="login-input" onfocus="this.value=''" style="box-shadow: none; background-color: #f9f9f9; border: none;" placeholder="Malaengkongkeng@gmail.com" required>
+                </div>
+
+                <div class="input-group input-group-sm-lg mb-3 mx-5" style="width: 85%;">
+                    <span class="input-group-text" id="inputGroup-sizing-sm" style="background-color: #f9f9f9; border: none; padding-right: 17px;">Password </span>
+                    <input type="password" class="form-control" id="password-input" onfocus="this.value=''" style="box-shadow: none; background-color: #f9f9f9; border: none;" placeholder="Password" required>
+                </div>
+
+                <button class="btn-login" id="btn-login" style="align-items: center; width: 20%;">Login</button>
+                <br><br>
+            </div>
+            
+        </div>
+    </div>
+</body>
+</html>

@@ -17,19 +17,30 @@
 </head>
 <body>
     
+    <!-- Ini untuk Navbar -->
     <div class="navbar"> 
+        <!-- semakin kecil angka di depan h, semakin kecil ukuran fontnya-->
         <h5 class="s">Pay-ndro</h1>
         <div class="menu-bar px-20 mx-20">
-            <a class="active" href="#home">Home</a>
+            <!-- Contoh HyperLink -->
+            <a class="active" href="home.html">Home</a>
             <a href="profile.html">About</a>
         </div>         
     </div>
     
+    <!-- Ini untuk kontent dibawah Navbar -->
     <div class="content">
+        <!-- Menggunakan konsep dari grid -->
+        <!-- Ini untuk bagian kiri -->
+        <!-- Ini div grid untuk bagian yang kiri -->
         <div class="side-content s1">
+
+            <!-- Ini isi konten dari grid -->
             <div class="left-small-content">
                 <p><b>Balance</b></p>
                 <div class="form-control money-balance"id="money-balance">Rp. 0</div>
+
+                <!-- Ini contoh button -->
                 <button type="button" id="btn-topup" class="btn-topup float-end">Top-Up</button>
                 <br>
             </div>
@@ -37,15 +48,23 @@
             <div class="left-small-content" id="form-topup" style="display: none;" >
                 <p><b>Top Up</b></p>
                 <div class="input-group input-group-sm mb-3">
+                    <!-- Guna <span> = membuat bagian baru di baris yang sama / konsep hampir sama seperti div -->
                     <span class="input-group-text" id="inputGroup-sizing-sm" style="background-color: #f9f9f9; border: none;">Rp</span>
+
+                    <!-- Ini contoh dari input bar -->
                     <input type="text" class="form-control" id="topup-input" style="box-shadow: none; background-color: #f9f9f9;" onfocus="this.value=''">
                     <span class="px-lg-4"><button class='submit-amount' id="submit-amount" style="height: 30px; float: right; width: 60px;" type="button">Send</button></span>
                   </div>
+
+                <!-- jika ingin ada jarak antar paragraf, pakai <br>/ semacam spasi gitu -->
                 <br>
              
             </div>
+
+            <!-- Ini bagian Informasi -->
             <div class="left-small-content">
                 <p><b>Information</b></p>
+  
                 <div class="input-group input-group-sm">
                     <span class="input-group-text" id="inputGroup-sizing-sm" style="border: none; background-color: white;font-weight: lighter; width: 120px;">Name</span>
                     <input type="text" class="form-control text-muted" style="border: none; background-color: white; box-shadow: none; font-weight: bold;" value="Mas Ragil" readonly>
@@ -60,13 +79,22 @@
                   </div>
                 <br>
             </div>
+
+            <!-- Ini Contoh ketika ingin memasukkan gambar -->
             <div class="img-logo mx-5 px-5" >
                 <img src="img/image_1.png" id="img-logo" style="width: 40vh; height: 30vh;" alt="">
             </div>
                           
         </div>
+
+        <!-- Ini untuk bagian tengah -->
+        <!-- Ini div grid untuk bagian yang tengah -->
         <div class="mid-content">
-            <div class="mid-small-content m1" style="background-color: white;">
+
+            <!-- Ini isi konten dari grid -->
+            <div class="mid-small-content m1" style="background-color: white; overflow-y: scroll;">
+
+                <!-- Ini bagian transfer -->
                 <p><b>Transfer</b></p>
                 <div class="input-group input-group-sm-lg mb-3">
                     <span class="input-group-text" id="inputGroup-sizing-sm" style="background-color: #f9f9f9; border: none;">Rp</span>
@@ -78,11 +106,17 @@
                 </div>
                 <div class="input-group input-group-sm-lg mb-3">
                     <span class="input-group-text" id="inputGroup-sizing-sm" style="background-color: #f9f9f9; border: none;"><i class="far fa-clipboard"></i></span>
+
+                    <!-- dianjurkan untuk menggunakan textarea ketika ingin membuat untuk keterangan -->
                     <textarea class="form-control" style="box-shadow: none; background-color: #f9f9f9; border: none;" placeholder="Description..."></textarea>
                 </div>
+
                 <button type="button" class="btn-transfer float-end" id="btn-transfer">Top-Up</button>
             </div>
+
             <div class="mid-small-content m2" style="background-color: white;">
+                
+                <!-- Ini bagian contact us  -->
                 <p><b>Contact Us</b></p>
                 <h1>
                     contact@payndro.com<br><br>
@@ -93,13 +127,18 @@
             </div>
             
         </div>
+
+        <!-- Ini untuk bagian kanan -->
+        <!-- Ini div grid untuk bagian kanan -->
         <div class="side-content s2">
+
+            <!-- Ini isi konten dari grid -->
             <div class="right-small-content" style="background-color: white; overflow-y: scroll;" id="right-small-content">
                 <p><b>Logs</b></p>
                 
+            </div>
         </div>
-    </div>
-        
-    
+    </div> 
+
 </body>
 </html>

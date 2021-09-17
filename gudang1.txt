@@ -1,41 +1,3 @@
-HTML
-<div class="topnav">
-            <div class="row">
-                <div class="col">
-                    <h1 class="text">Pay-ndro</h1>
-                </div>
-                <div class="col">
-                    <a href="#about">About</a>
-                    <a class="active" href="#home">Home</a>
-                </div>
-            </div>
-        </div>
-          
-          <div style="padding-left:16px">
-            <h2>Top Navigation Example</h2>
-            <p>Some content..</p>
-          </div>
-<input type="number" class="money-balance" id="money-balance" placeholder="Rp 9.000.068" style="background-color: #f3f3f3;" readonly>
-<tr><td>Name</td><td><input class="form-control-sm" type="text" name="name" id="name-info" size="25" style="background-color: #f3f3f3;" placeholder="Mas Ragil" readonly></td></tr>
-                        <tr><td>Card Type</td><td><input type="text" name="cardType" id="card-info" size="25" style="background-color: #f3f3f3;" placeholder="Gold" readonly></td></tr>
-                        <tr><td>Phone Number</td> <td><input type="text" name="phoneNumb" id="phone-info" size="13" style="background-color: #f3f3f3;" placeholder="0123456789012" readonly></td></tr>
-
-<div class="log-content px-3" style="padding-top: 4px; margin-bottom: 0 ;border-radius: 20px;border-width: 1px;border-style: solid;">
-                    <h7><b>Top Up</b></h7>
-                    <div class="outputNum" style="color: green;">+ Rp. 150.000</div>
-                    <p class="text-muted" style="text-align: end; font-size: small;" id="datetime">20 Maret 2021</p>
-                    
-                </div>
-
-CSS      
-    .left-small-content img{
-    height: 30vh;
-    width: 45vh;
-}
-
-
-//V2
-
 let walletId =0;
 let userId = '';
 let tokenId = '';
@@ -82,9 +44,8 @@ window.onload=function(){
         if(isNaN(inputTopUp.value) || inputTopUp.value.length === 0){
             alert("Please Input Number...");
             return 0;  
-        }else{
-            console.log('Woi lah yang bener' +document.getElementById('input-topup').value)   
-            postBalance(document.getElementById('input-topup').value);
+        }else{   
+            postBalance();
             addLogTopUp("Top Up", parseInt(inputTopUp.value));
         }
     });
@@ -135,17 +96,18 @@ window.onload=function(){
         })
     };
 
-    function postBalance(e){
+    function postBalance(){
         
         tokenId = window.localStorage.getItem('TOKEN');
         walletId = window.localStorage.getItem('WALLET_ID');
+        let inputAmountNew = document.getElementById('input-topup');
+        let balanceNew = 0;
         
-        
-        
-        
+        console.log('WOi lah anjing gakelar '+inputAmountNew.value);
+        balanceNew += parseInt(inputAmountNew.value);
 
         var details = {
-            'amount': parseInt(e),
+            'amount': inputAmountNew,
             'id': walletId
         };
       
@@ -247,4 +209,3 @@ window.onload=function(){
     listLog.appendChild(newDiv);
     };
     
-

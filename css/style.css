@@ -78,7 +78,7 @@
     font-size: small;
 }
 
-.left-small-content button:hover,.mid-small-content button:hover{
+.left-small-content button:hover,.mid-small-content button:hover,.card-login-body button:hover{
     color: #f37da3;
 }
 
@@ -164,8 +164,13 @@
 .card{
     margin-top: 10%;
     margin-bottom: 10%;
-    margin-left: 30%;
-    width: 40%;
+    background-color: #f3f3f3;
+    border: none;
+}
+
+.card-body{
+    width: 50%;
+    background-color: #fff;
 }
 
 .card-body h1{
@@ -179,3 +184,20 @@
     font-size: small;
 }
 
+/* Card Login */
+.card-login{
+    top: 40%;
+    left: 30%;
+    width: 40%;
+}
+
+.card-login-body h1{
+    font-size: medium;
+    padding-top: 10px;
+    font-weight: normal;
+}
+
+.card-login-body h2{
+    padding: 0;
+    font-size: small;
+}
